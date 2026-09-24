@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>HACKING SCANNER</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>HACKING SCANNER</h1>
+        <p>FriendScan — QR Scanner & Public Information Dashboard</p>
+    </header>
+
+    <main>
+
+        <section class="scanner card">
+
+            <h2>📷 QR / Barcode Scanner</h2>
+
+            <video
+                id="camera"
+                autoplay
+                muted
+                playsinline
+            ></video>
+
+            <div class="buttons">
+
+                <button id="startCamera">
+                    Start Camera
+                </button>
+
+                <button id="stopCamera">
+                    Stop Camera
+                </button>
+
+                <label class="upload">
+                    🖼️ Scan Image
+                    <input
+                        id="imageInput"
+                        type="file"
+                        accept="image/*"
+                    >
+                </label>
+
+            </div>
+
+            <div id="scanStatus">
+                Scanner siap.
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>👤 FriendScan Profile</h2>
+
+            <div class="profile">
+
+                <div id="avatar">
+                    ?
+                </div>
+
+                <div>
+                    <h3 id="targetName">
+                        Unknown Target
+                    </h3>
+
+                    <p id="targetId">
+                        Target ID: -
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>📱 Connected Accounts</h2>
+
+            <div id="accounts">
+                Belum ada data akun.
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>📍 Location Sharing</h2>
+
+            <div id="location">
+                Lokasi belum dibagikan.
+            </div>
+
+            <button id="shareLocation">
+                Bagikan Lokasi Saya
+            </button>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>🗺️ Map</h2>
+
+            <div id="map">
+                Lokasi belum tersedia.
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>🌐 Public Information</h2>
+
+            <div id="publicInformation">
+                Belum ada informasi publik.
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>📡 Authorized Public Camera Sources</h2>
+
+            <div id="publicCameras">
+                Belum ada sumber kamera publik.
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>🔐 Privacy & Permission</h2>
+
+            <div id="permissions">
+
+                <p>
+                    Account:
+                    <strong>Not Connected</strong>
+                </p>
+
+                <p>
+                    Location:
+                    <strong>Not Granted</strong>
+                </p>
+
+                <p>
+                    Private Data:
+                    <strong>Protected</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        HACKING SCANNER
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
