@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background: #080b10;
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.header {
+    padding: 25px 20px;
+
+    border-bottom: 1px solid #252c35;
+
+    background: #0d1117;
+}
+
+.header h1 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.header p {
+    margin: 8px 0 0;
+
+    color: #8e99a8;
+
+    font-size: 14px;
+}
+
+main {
+    width: 94%;
+    max-width: 1000px;
+
+    margin: 25px auto;
+}
+
+.card {
+    margin-bottom: 18px;
+
+    padding: 20px;
+
+    background: #11161d;
+
+    border: 1px solid #27313d;
+
+    border-radius: 15px;
+}
+
+.card h2 {
+    margin-top: 0;
+
+    font-size: 18px;
+}
+
+#camera {
+    width: 100%;
+
+    min-height: 220px;
+
+    background: #000;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+button,
+.upload {
+    display: inline-block;
+
+    padding: 12px 16px;
+
+    border: 0;
+
+    border-radius: 9px;
+
+    background: #287bea;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover,
+.upload:hover {
+    opacity: .8;
+}
+
+.upload input {
+    display: none;
+}
+
+#scanStatus {
+    margin-top: 15px;
+
+    padding: 12px;
+
+    background: #171d26;
+
+    border-radius: 9px;
+
+    color: #aab4c0;
+}
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+#avatar {
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #202832;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile h3 {
+    margin: 0;
+}
+
+.profile p {
+    margin: 6px 0 0;
+
+    color: #8e99a8;
+}
+
+.account {
+    margin-bottom: 10px;
+
+    padding: 14px;
+
+    background: #171d26;
+
+    border-radius: 9px;
+}
+
+#location {
+    margin-bottom: 15px;
+
+    padding: 15px;
+
+    background: #171d26;
+
+    border-radius: 9px;
+
+    color: #aab4c0;
+}
+
+#map {
+    min-height: 180px;
+
+    display: grid;
+    place-items: center;
+
+    padding: 20px;
+
+    background: #10161d;
+
+    border-radius: 10px;
+
+    color: #8e99a8;
+
+    text-align: center;
+}
+
+.info {
+    padding: 14px;
+
+    background: #171d26;
+
+    border-radius: 9px;
+
+    color: #aab4c0;
+}
+
+footer {
+    padding: 30px;
+
+    color: #687483;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button,
+    .upload {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
