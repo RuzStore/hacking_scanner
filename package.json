@@ -1,0 +1,21 @@
+{
+  "name": "friendscan",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:api": "npm --workspace apps/api run dev",
+    "build": "npm run build:web && npm run build:api",
+    "build:web": "npm --workspace apps/web run build",
+    "build:api": "npm --workspace apps/api run build",
+    "test": "npm run test:api",
+    "test:api": "npm --workspace apps/api run test"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20 <23"
+  }
+}
