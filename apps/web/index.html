@@ -1,27 +1,28 @@
 <!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FriendScan QR Scanner">
-  <title>FriendScan</title>
-</head>
-<body>
-  <main id="app">
-    <h1>FriendScan</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FriendScan</title>
+  </head>
+  <body>
+    <main>
+      <h1>FriendScan</h1>
+      <p>QR scanner untuk informasi yang memang disediakan oleh pemilik.</p>
 
-    <p>
-      QR scanner untuk informasi yang memang disediakan oleh pemilik.
-    </p>
+      <label for="token">Profile ID</label>
+      <input
+        id="token"
+        type="text"
+        autocomplete="off"
+        maxlength="100"
+        placeholder="Masukkan profile ID"
+      />
 
-    <label for="token">Demo token</label>
-    <input id="token" type="text" autocomplete="off">
+      <button id="scan" type="button">Buat Token Demo</button>
 
-    <button id="scan">Scan</button>
-
-    <pre id="result" aria-live="polite"></pre>
-  </main>
-
-  <script type="module" src="/src/main.ts"></script>
-</body>
+      <pre id="result" aria-live="polite"></pre>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
